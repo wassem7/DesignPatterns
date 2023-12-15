@@ -2,11 +2,11 @@
 
 namespace DesignPatterns
 {
-    public class GooglePay : IPayment
+    public class GooglePayPayment : IPayment
     {
         public void Pay(double amount)
         {
-            Console.WriteLine($"Payment of $ {amount} made with GOOGLE PAY");
+            Console.WriteLine($"Amount ${amount} paid with GOOGLE PAY");
         }
     }
 }

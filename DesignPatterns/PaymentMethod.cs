@@ -1,8 +1,9 @@
 ﻿namespace DesignPatterns
 {
-    public enum Payment
+    public enum PaymentMethod
     {
         GooglePay,
-        Paypal
+        Paypal,
+        ApplePay
     }
 }

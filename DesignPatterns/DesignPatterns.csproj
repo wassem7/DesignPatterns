@@ -40,6 +40,11 @@
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="GooglePayPayment.cs" />
+        <Compile Include="IPayment.cs" />
+        <Compile Include="PaymentFactory.cs" />
+        <Compile Include="PaymentMethod.cs" />
+        <Compile Include="PaypalPayment.cs" />
         <Compile Include="Program.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
     </ItemGroup>

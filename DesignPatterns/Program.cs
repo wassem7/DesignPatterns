@@ -1,9 +1,14 @@
-﻿namespace DesignPatterns
+﻿using System;
+using System.Text;
+
+namespace DesignPatterns
 {
-  internal class Program
-  {
-    public static void Main(string[] args)
+    class Program
     {
+        static void Main()
+        {
+            var payment = PaymentFactory.CreatePayment(PaymentMethod.ApplePay);
+            payment.Pay(290.23);
+        }
     }
-  }
 }

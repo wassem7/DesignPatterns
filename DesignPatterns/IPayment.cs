@@ -1,7 +1,7 @@
 ﻿namespace DesignPatterns
 {
-    public class IPayment
+    public interface IPayment
     {
-        
+        void Pay(double amount);
     }
 }
