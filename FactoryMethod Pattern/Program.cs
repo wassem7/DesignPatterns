@@ -7,7 +7,7 @@ namespace DesignPatterns
     {
         static void Main()
         {
-            var payment = PaymentFactory.CreatePayment(PaymentMethod.ApplePay);
+            var payment = PaymentFactory.CreatePayment(PaymentMethod.GooglePay);
             payment.Pay(290.23);
         }
     }
