@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.AbstractFactory;
+using DesignPatterns.BuilderPattern;
 
 namespace DesignPatterns;
 
@@ -6,8 +7,10 @@ public class Program1
 {
     public static void Main()
     {
-        var mountainBikeFactory = new MountainBikeFactory();
+        var roadBikeBuilder = new RoadBikeBuilder();
 
-        var handleBar = mountainBikeFactory.CreateHandleBar();
+        var director = new Director(roadBikeBuilder);
+
+        var roadBike = director.Make();
     }
 }
